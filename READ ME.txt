@@ -1,0 +1,57 @@
+comandos executados para projeto em .ts
+
+#para cria o package
+npm init -y
+
+#instala o typescript 
+npm i typescript nodemon ts-node
+
+#instala o express
+npm install express
+
+# coloca o ts config para copilação type script
+npx tsc -- init
+ou
+./node_modules/.bin/tsc --init
+
+
+# npx nomearquivexecuta.ts executa o programa em .ts
+npx ts-node src/server.ts
+
+
+
+# instala ts-node-dev para sempre ficar recompilando e atualizando conforme ir salvando
+npm install ts-node-dev
+
+# reexecuta sozinho apos arquivo ser salvo
+npx ts-node-dev src/server.ts
+
+
+OBS:.
+_______________________________________________________________
+No arquivo package.json posso colocar em scripts 
+scripts para automatizar o processo de execução como exemplo:
+
+"scripts": {
+    "dev": "npx ts-node-dev src/server.ts",   <----coloquei agora executo npm run dev
+    "test": "echo \"Error: no test specified\" && exit 1"
+},
+
+
+Antes era
+npx ts-node-dev src/server.ts
+
+agora
+npm run dev
+_______________________________________________________________
+
+
+
+
+Podemos usar o KNEXT.js para banco de dados
+
+
+
+# para controle de trafico de dns utilizamos o cors para controlar
+npm install cors
+npm install @types/cors 
